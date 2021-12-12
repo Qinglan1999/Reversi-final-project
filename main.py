@@ -192,7 +192,7 @@ def get_computer_move(board, computer_tile):
     for x, y in possible_moves:
         dupe_board = get_board_copy(board)
         make_move(dupe_board, computer_tile, x, y)
-        # Select the move base on the socre
+        # Select the move base on the score
         # Simulate the further move on copy board
         # Flip the move with highest score
         score = get_score_of_board(dupe_board)[computer_tile]
